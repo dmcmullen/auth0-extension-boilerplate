@@ -3,6 +3,7 @@ var auth0    = require('auth0-oauth2-express');
 var Webtask  = require('webtask-tools');
 var app      = express();
 var metadata = require('./webtask.json');
+var useless = require('./server/index.js');
 
 app.use(auth0({
   scopes: 'read:connections'
